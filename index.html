@@ -1,15 +1,329 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Shrilata Wagle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shrilata Wagle | Personal Website</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#333;
+background:#f4f6f9;
+}
+
+/* Header */
+
+header{
+background:#1f3c88;
+color:white;
+padding:20px 0;
+position:sticky;
+top:0;
+}
+
+.container{
+width:85%;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ffd166;
+}
+
+/* Hero Section */
+
+.hero{
+background:linear-gradient(to right,#1f3c88,#3a7bd5);
+color:white;
+padding:100px 0;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* Sections */
+
+section{
+padding:60px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:30px;
+color:#1f3c88;
+}
+
+/* About */
+
+.about{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:200px;
+border-radius:50%;
+}
+
+.about-text{
+flex:1;
+}
+
+/* Skills */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+/* Projects */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3{
+margin-bottom:10px;
+}
+
+/* Contact */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+/* Footer */
+
+footer{
+background:#1f3c88;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.about{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>Welcome to My Website</h1>
+<header>
+<div class="container">
+<nav>
+<h2>Shrilata Wagle</h2>
 
-<p>Hello! I am Shrilata Wagle.</p>
-<p>Lecturer | Computer Science and Information Technology</p>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+
+
+<section class="hero">
+<div class="container">
+<h1>Hello, I'm Shrilata Wagle</h1>
+<p>Computer Science Graduate | Lecturer | Researcher</p>
+</div>
+</section>
+
+
+<section id="about">
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<img src="profile.jpg" alt="profile">
+
+<div class="about-text">
+<p>
+I am a Computer Science graduate with experience in teaching and research.
+I have been teaching Web Technology, Programming, and Computer Science
+courses for the past few years.
+</p>
+
+<p>
+My research interest includes Natural Language Processing, Machine Learning,
+and Grammatical Error Correction. I have worked on transformer models such
+as mT5 for Nepali spelling correction.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="skills">
+<div class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Programming</h3>
+<p>Python, PHP, JavaScript</p>
+</div>
+
+<div class="skill-card">
+<h3>Web Development</h3>
+<p>HTML, CSS, Bootstrap</p>
+</div>
+
+<div class="skill-card">
+<h3>Machine Learning</h3>
+<p>Transformer Models, NLP</p>
+</div>
+
+<div class="skill-card">
+<h3>Teaching</h3>
+<p>Web Technology, Programming</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="projects">
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Nepali Spelling Correction</h3>
+<p>
+Fine-tuned mT5 transformer model for correcting Nepali text using a large dataset.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Minesweeper Game</h3>
+<p>
+Developed a Minesweeper game as part of my academic project.
+</p>
+</div>
+
+<div class="project-card">
+<h3>E-learning Materials</h3>
+<p>
+Developed learning resources and lab exercises for web technology students.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="contact">
+<div class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>LinkedIn: linkedin.com/in/shrilata-wagle</p>
+<p>GitHub: github.com/theycallmeshree</p>
+
+</div>
+
+</div>
+</section>
+
+
+<footer>
+<p>© 2026 Shrilata Wagle | Personal Website</p>
+</footer>
+
 
 </body>
 </html>
